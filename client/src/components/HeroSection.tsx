@@ -6,7 +6,7 @@ export default function HeroSection() {
   const handleScrollTo = (sectionId: string) => {
     const element = document.querySelector(sectionId);
     if (element) {
-      const offsetTop = element.offsetTop - 80;
+      const offsetTop = element.offsetTop - 60;
       window.scrollTo({
         top: offsetTop,
         behavior: "smooth",
@@ -17,7 +17,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-12"
     >
       {/* Background Image */}
       <div

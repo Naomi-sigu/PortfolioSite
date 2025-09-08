@@ -12,7 +12,7 @@ export default function Navigation() {
     const updateActiveSection = () => {
       let current = '';
       sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
+        const sectionTop = section.offsetTop - 80;
         const sectionHeight = section.clientHeight;
         if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
           current = section.getAttribute('id') || '';
@@ -35,7 +35,7 @@ export default function Navigation() {
     setIsOpen(false);
     const element = document.querySelector(href);
     if (element) {
-      const offsetTop = element.offsetTop - 80;
+      const offsetTop = element.offsetTop - 60;
       window.scrollTo({
         top: offsetTop,
         behavior: 'smooth'
@@ -50,9 +50,9 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-12">
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-bold text-primary" data-testid="logo-link">
