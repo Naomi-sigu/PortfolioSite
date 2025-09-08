@@ -77,9 +77,9 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-12 bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 fade-in">
+        <div className="text-center mb-10 fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-4" data-testid="contact-title">
             Get In Touch
           </h2>
