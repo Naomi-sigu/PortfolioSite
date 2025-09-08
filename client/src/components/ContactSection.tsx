@@ -79,9 +79,9 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-12 bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-10 fade-in">
+        <div className="text-left mb-10 fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-4" data-testid="contact-title">
-            Get In Touch
+        📫 Get In Touch
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="contact-description">
             Feel free to reach out for collaborations, opportunities, or just to say hi! I'm always open to discussing new projects and ideas.

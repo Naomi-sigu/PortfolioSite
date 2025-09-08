@@ -3,7 +3,7 @@ import { ChevronDown, ChevronUp, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const skills = [
-  "Python", "SQL", "HTML & CSS", "Git", "Django", "Tableau/ Power BI", "Data & Analytics", "AI Tools"
+  "Python", "Git", "SQL", "Java", "C++", "Kotlin", "TypeScript", "React", "Node.js"
 ];
 
 
@@ -26,25 +26,20 @@ export default function AboutSection() {
         <div className="fade-in">
           <div className="prose prose-lg max-w-none text-muted-foreground mb-8">
             <p className="text-lg leading-relaxed mb-6" data-testid="about-intro">
-              I'm an open source enthusiast exploring new technologies and ideas. Passionate about Python development and creating cool learning projects that solve real problems.
+          Hello! I'm Naomi Neema Sigu,a developer with a love for building practical solutions that blend technology and creativity. I’m currently focused on learning data science and AI development, sharpening my skills in Python, SQL, and machine learning while exploring how automation and intelligent systems can solve real-world problems.
             </p>
             
             <div id="about-preview">
               <p className="text-lg leading-relaxed mb-6" data-testid="about-gate">
-                🎓 GATE 2025 qualified and currently preparing for GATE CSE 2026.
+                My background includes working with web technologies like Django for building applications, as well as hands-on projects in data analysis and visualization. I enjoy taking ideas from concept to a working solution and documenting the process so others can learn from it too.
               </p>
             </div>
 
             {isExpanded && (
               <div id="about-full" className="space-y-6">
-                <p className="text-lg leading-relaxed" data-testid="about-focus">
-                  I enjoy building projects that help visualize complex concepts and make learning more intuitive. My focus is on creating tools that bring abstract ideas to life through interactive visualizations.
-                </p>
-                <p className="text-lg leading-relaxed" data-testid="about-experience">
-                  Currently pursuing my Computer Science degree, I've developed a strong foundation in algorithms, data structures, and software engineering principles. My projects range from practical tools like email automation scripts to educational visualizations for finite automata.
-                </p>
+              
                 <p className="text-lg leading-relaxed" data-testid="about-philosophy">
-                  I believe in learning through building and sharing knowledge with the community. Every project I work on is an opportunity to explore new technologies and solve interesting challenges.
+                  I believe in learning through building and sharing knowledge with the community. Every project I work on is an opportunity to explore my curiosity, new technologies and solve interesting challenges.
                 </p>
               </div>
             )}
