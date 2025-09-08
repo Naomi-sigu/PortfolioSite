@@ -6,7 +6,7 @@ export default function HeroSection() {
   const handleScrollTo = (sectionId: string) => {
     const element = document.querySelector(sectionId);
     if (element) {
-      const offsetTop = element.offsetTop - 60;
+      const offsetTop = (element as HTMLElement).offsetTop - 60;
       window.scrollTo({
         top: offsetTop,
         behavior: "smooth",

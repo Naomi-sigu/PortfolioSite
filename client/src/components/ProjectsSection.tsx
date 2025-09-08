@@ -49,7 +49,7 @@ export default function ProjectsSection() {
                   </p>
                   
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.map((tag, index) => (
+                    {project.tags.map((tag: string, index: number) => (
                       <span 
                         key={index}
                         className="skill-tag px-2 py-1 bg-muted/20 text-muted-foreground text-xs rounded hover:bg-primary hover:text-primary-foreground transition-colors"

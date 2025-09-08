@@ -12,7 +12,7 @@ export default function Navigation() {
     const updateActiveSection = () => {
       let current = '';
       sections.forEach(section => {
-        const sectionTop = section.offsetTop - 80;
+        const sectionTop = (section as HTMLElement).offsetTop - 80;
         const sectionHeight = section.clientHeight;
         if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
           current = section.getAttribute('id') || '';
@@ -35,7 +35,7 @@ export default function Navigation() {
     setIsOpen(false);
     const element = document.querySelector(href);
     if (element) {
-      const offsetTop = element.offsetTop - 60;
+      const offsetTop = (element as HTMLElement).offsetTop - 60;
       window.scrollTo({
         top: offsetTop,
         behavior: 'smooth'

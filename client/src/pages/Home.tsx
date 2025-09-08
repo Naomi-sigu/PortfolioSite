@@ -14,7 +14,7 @@ export default function Home() {
       if (hash) {
         const element = document.querySelector(hash);
         if (element) {
-          const offsetTop = element.offsetTop - 60;
+          const offsetTop = (element as HTMLElement).offsetTop - 60;
           window.scrollTo({
             top: offsetTop,
             behavior: 'smooth'
