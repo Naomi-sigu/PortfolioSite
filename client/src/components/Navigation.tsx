@@ -55,8 +55,8 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-12">
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-primary" data-testid="logo-link">
-              AK
+            <Link href="/" className="text-2xl font-bold text-primary" style={{ fontFamily: "var(--font-display)" }} data-testid="logo-link">
+              Neema Sigu
             </Link>
           </div>
 

@@ -29,7 +29,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 hero-overlay bg-gradient-to-br from-black/60 to-black/40" />
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 text-left max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="fade-in">
           <p
             className="text-lg text-muted-foreground mb-4"
@@ -54,8 +54,8 @@ export default function HeroSection() {
             data-testid="hero-description"
           >
             I'm a tech enthusiast exploring new technologies and ideas.
-            Passionate about Python & AI development and creating
-            projects that solve real problems.
+            Passionate about Python & AI development and creating projects that
+            solve real problems.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

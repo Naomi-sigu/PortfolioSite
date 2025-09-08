@@ -3,7 +3,7 @@ import { ChevronDown, ChevronUp, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const skills = [
-  "Python", "Git", "SQL", "Java", "C++", "Kotlin", "TypeScript", "React", "Node.js"
+  "Python", "SQL", "HTML & CSS", "Git", "Django", "Tableau/ Power BI", "Data & Analytics", "AI Tools"
 ];
 
 
@@ -17,7 +17,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-12 bg-card/30">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-10 fade-in">
+        <div className="text-left mb-10 fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-4" data-testid="about-title">
             About Me
           </h2>
