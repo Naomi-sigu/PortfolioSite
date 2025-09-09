@@ -11,30 +11,23 @@ const contactInfo = [
   {
     id: 'email',
     title: 'Email',
-    value: 'atulkushwaha2008@gmail.com',
-    href: 'mailto:atulkushwaha2008@gmail.com',
+    value: 'stl.sigu@gmail.com',
+    href: 'mailto:stl.sigu@gmail.com',
     icon: Mail
   },
   {
     id: 'github',
     title: 'GitHub',
-    value: 'github.com/coderatul',
-    href: 'https://github.com/coderatul',
+    value: 'github.com/Naomi-sigu',
+    href: 'https://github.com/Naomi-sigu/',
     icon: Github
   },
   {
     id: 'linkedin',
     title: 'LinkedIn',
-    value: 'linkedin.com/in/coderatul',
-    href: 'https://linkedin.com/in/coderatul',
+    value: 'linkedin.com/in/naomi-sigu',
+    href: 'https://www.linkedin.com/in/naomi-sigu/',
     icon: Linkedin
-  },
-  {
-    id: 'twitter',
-    title: 'Twitter',
-    value: '@coderatul',
-    href: 'https://twitter.com/coderatul',
-    icon: Twitter
   }
 ];
 
@@ -88,45 +81,9 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 fade-in">
-          {/* Contact Info */}
-          <div className="space-y-8">
-            {contactInfo.map((contact) => {
-              const IconComponent = contact.icon;
-              return (
-                <Card 
-                  key={contact.id}
-                  className="bg-card/50 border border-border hover:border-primary/30 transition-colors"
-                  data-testid={`contact-info-${contact.id}`}
-                >
-                  <CardContent className="flex items-center space-x-4 p-6">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <IconComponent className="text-primary h-6 w-6" />
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground" data-testid={`contact-${contact.id}-title`}>
-                        {contact.title}
-                      </h3>
-                      <a 
-                        href={contact.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                        data-testid={`contact-${contact.id}-link`}
-                      >
-                        {contact.value}
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-
-          {/* Contact Form */}
-          <Card className="bg-card/50 border border-border">
+        <div className="fade-in">
+          {/* Contact Form - Now at the top */}
+          <Card className="bg-card/50 border border-border mb-8">
             <CardContent className="p-8">
               <h3 className="text-xl font-semibold text-foreground mb-6" data-testid="contact-form-title">
                 Send a Message
@@ -211,6 +168,33 @@ export default function ContactSection() {
               </form>
             </CardContent>
           </Card>
+
+          {/* Social Links and Name - Now at the bottom */}
+          <div className="text-center">
+            <h3 className="text-xl font-semibold text-foreground mb-6" data-testid="contact-social-title">
+              Naomi Neema Sigu
+            </h3>
+            <div className="flex justify-center items-center space-x-6">
+              {contactInfo.map((contact) => {
+                const IconComponent = contact.icon;
+                return (
+                  <a 
+                    key={contact.id}
+                    href={contact.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-col items-center space-y-2 text-muted-foreground hover:text-primary transition-colors group"
+                    data-testid={`contact-social-${contact.id}`}
+                  >
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <IconComponent className="h-6 w-6" />
+                    </div>
+                    <span className="text-sm font-medium">{contact.title}</span>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </section>
