@@ -9,11 +9,11 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="py-12 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-10 fade-in">
+        <div className="text-left mb-10 fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-4" data-testid="projects-title">
             Projects
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="projects-description">
+          <p className="text-xl text-muted-foreground max-w-2xl" data-testid="projects-description">
             A collection of my work.
           </p>
         </div>
@@ -82,12 +82,12 @@ export default function ProjectsSection() {
           </div>
         )}
 
-        <div className="text-center mt-8 fade-in">
+        <div className="text-left mt-8 fade-in">
           <Button 
             variant="outline"
             size="lg"
             className="inline-flex items-center px-8 py-3 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
-            onClick={() => window.open('https://github.com/coderatul', '_blank')}
+            onClick={() => window.open('https://github.com/Naomi-sigu/', '_blank')}
             data-testid="button-view-more-projects"
           >
             <span>View more projects on GitHub</span>

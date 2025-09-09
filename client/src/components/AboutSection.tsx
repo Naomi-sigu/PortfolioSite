@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import cvFile from "@assets/naomi-cv.pdf";
 
 const skills = [
-  "Python", "Git", "SQL", "Java", "C++", "Kotlin", "TypeScript", "React", "Node.js"
+  "Python", "SQL", "HTML & CSS", "Git", "Django", "Tableau/ Power BI", "Data & Analytics", "AI Tools"
 ];
 
 
@@ -38,7 +39,7 @@ export default function AboutSection() {
             {isExpanded && (
               <div id="about-full" className="space-y-6">
     
-                <p class="text-lg leading-relaxed" data-testid="about-goals">
+                <p className="text-lg leading-relaxed" data-testid="about-goals">
                   Beyond code, I like being outdoors — camping, waterfalls, hikes, and nature fuel my creativity and focus. This portfolio is a reflection of both my technical journey and my drive to keep learning, experimenting, and building.
                 </p>
               </div>
@@ -77,8 +78,8 @@ export default function AboutSection() {
             <Button
               className="inline-flex items-center px-8 py-3 bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-colors"
               onClick={() => {
-                // In a real implementation, this would download or open the resume
-                window.open('#', '_blank');
+                // Download the CV
+                window.open(cvFile, '_blank');
               }}
               data-testid="button-download-resume"
             >
