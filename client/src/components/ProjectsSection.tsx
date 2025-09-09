@@ -8,7 +8,7 @@ const projects: any[] = [];
 export default function ProjectsSection() {
   return (
     <section id="projects" className="py-12 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left mb-10 fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-4" data-testid="projects-title">
             Projects
@@ -64,7 +64,7 @@ export default function ProjectsSection() {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
+                    className="inline-flex items- text-primary hover:text-primary/80 transition-colors"
                     data-testid={`project-link-${project.id}`}
                   >
                     <span>View on GitHub</span>
@@ -82,7 +82,7 @@ export default function ProjectsSection() {
           </div>
         )}
 
-        <div className="text-left mt-8 fade-in">
+        <div className="text-center mt-8 fade-in">
           <Button 
             variant="outline"
             size="lg"

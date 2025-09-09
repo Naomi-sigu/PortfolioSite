@@ -171,9 +171,7 @@ export default function ContactSection() {
 
           {/* Social Links and Name - Now at the bottom */}
           <div className="text-center">
-            <h3 className="text-xl font-semibold text-foreground mb-6" data-testid="contact-social-title">
-              Naomi Neema Sigu
-            </h3>
+            
             <div className="flex justify-center items-center space-x-6">
               {contactInfo.map((contact) => {
                 const IconComponent = contact.icon;

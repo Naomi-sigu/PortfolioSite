@@ -26,7 +26,7 @@ export default function HeroSection() {
       />
 
       {/* Overlay for text readability - 40% transparency as requested */}
-      <div className="absolute inset-0 hero-overlay bg-gradient-to-br from-black/60 to-black/40" />
+      <div className="absolute inset-0 hero-overlay bg-gradient-to-br from-black/80 to-black/40" />
 
       {/* Content */}
       <div className="relative z-10 text-left max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
