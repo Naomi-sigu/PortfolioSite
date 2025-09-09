@@ -14,7 +14,7 @@ export default function ProjectsSection() {
             Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="projects-description">
-            A collection of my work from GitHub. These projects showcase my skills and interests in software development.
+            A collection of my work.
           </p>
         </div>
 

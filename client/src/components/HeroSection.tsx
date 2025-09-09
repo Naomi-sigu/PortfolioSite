@@ -55,7 +55,7 @@ export default function HeroSection() {
           >
             I'm a tech enthusiast exploring new technologies and ideas.
             Passionate about Python & AI development and creating projects that
-            solve real problems.
+            solve real problems. Always learning, always a rookie 🚀👮‍♀️
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

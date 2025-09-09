@@ -26,20 +26,20 @@ export default function AboutSection() {
         <div className="fade-in">
           <div className="prose prose-lg max-w-none text-muted-foreground mb-8">
             <p className="text-lg leading-relaxed mb-6" data-testid="about-intro">
-          Hello! I'm Naomi Neema Sigu,a developer with a love for building practical solutions that blend technology and creativity. I’m currently focused on learning data science and AI development, sharpening my skills in Python, SQL, and machine learning while exploring how automation and intelligent systems can solve real-world problems.
+          Hello! I'm Naomi Neema Sigu, a developer with a love for building practical solutions that blend technology and creativity. I’m currently focused on learning data science and AI development, sharpening my skills in Python, SQL, and machine learning while exploring how automation and intelligent systems can solve real-world problems.
             </p>
             
             <div id="about-preview">
               <p className="text-lg leading-relaxed mb-6" data-testid="about-gate">
-                My background includes working with web technologies like Django for building applications, as well as hands-on projects in data analysis and visualization. I enjoy taking ideas from concept to a working solution and documenting the process so others can learn from it too.
+                My background is in Software Engineering, includes working with web technologies like Django for building applications, as well as hands-on projects in data analysis and visualization. I enjoy taking ideas from concept to a working solution and Every project I work on is an opportunity to explore my curiosity, new technologies and solve interesting challenges.
               </p>
             </div>
 
             {isExpanded && (
               <div id="about-full" className="space-y-6">
-              
-                <p className="text-lg leading-relaxed" data-testid="about-philosophy">
-                  I believe in learning through building and sharing knowledge with the community. Every project I work on is an opportunity to explore my curiosity, new technologies and solve interesting challenges.
+    
+                <p class="text-lg leading-relaxed" data-testid="about-goals">
+                  Beyond code, I like being outdoors — camping, waterfalls, hikes, and nature fuel my creativity and focus. This portfolio is a reflection of both my technical journey and my drive to keep learning, experimenting, and building.
                 </p>
               </div>
             )}
