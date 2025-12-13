@@ -27,7 +27,7 @@ export default function AboutSection() {
         <div className="fade-in">
           <div className="prose prose-lg max-w-none text-muted-foreground mb-8">
             <p className="text-lg leading-relaxed mb-6" data-testid="about-intro">
-          Hello! I'm Naomi Neema Sigu, a developer with a love for building practical solutions that blend technology and creativity. I’m currently focused on learning data science and AI development, sharpening my skills in Python, SQL, and machine learning while exploring how automation and intelligent systems can solve real-world problems.
+          Hello! I'm Naomi Neema Sigu, a developer with a love for building practical solutions that blend technology and creativity. I’m currently learning data science and AI development, sharpening my skills in Python, SQL, and machine learning while exploring how automation and intelligent systems can solve real-world problems.
             </p>
             
             <div id="about-preview">
